@@ -1,9 +1,7 @@
-# 👁️ 实时眼部检测与瞳孔追踪系统
+# 实时眼部检测与瞳孔追踪系统
 
-### :eye: 基于多版本 YOLO 的眼部检测与实时瞳孔定位系统
+### 基于多版本 YOLO 的眼部检测与实时瞳孔定位系统
 > [![GitHub](https://img.shields.io/badge/GitHub-代码仓库-blue)](https://github.comcrazybubbbbbble/yolov8-eyedetector ) [![Python](https://img.shields.io/badge/Python-3.9+-green)](https://www.python.org/) [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE) <br>
-> 你的姓名 <br>
-> 你的机构/组织 <br>
 
 **核心发现**: 经实证研究对比 12 个不同架构的模型，YOLOv8n 被证实为当前算力条件下兼顾高精度 (mAP@0.5 > 94.7%) 与实时性 (FPS > 150) 的最佳选择。
 
@@ -216,50 +214,13 @@ yolo detect train data=datasets/eye-mouth-dataset/data.yaml model=yolov5s.pt epo
 
 ---
 
-## :microscope: 技术细节
-
-### 级联检测流程
-```
-输入视频流
-    ↓
-[阶段 1] YOLOv8n 眼部区域检测
-    ↓ (输出: 眼部边界框)
-[阶段 2] ROI 提取（裁剪 + 边缘扩展）
-    ↓ (输出: 眼部局部图像)
-[阶段 3] 预处理（灰度化 + 高斯模糊）
-    ↓
-[阶段 4] 自适应二值化（分割瞳孔）
-    ↓
-[阶段 5] 轮廓分析（最大轮廓 + 重心计算）
-    ↓
-[阶段 6] 可视化（瞳孔中心标记 + 追踪轨迹）
-    ↓
-输出结果
-```
-
-### 鲁棒性增强技术
-
-| 场景挑战 | 解决方案 | 实现方法 |
-|:-------:|:-------:|:-------:|
-| 眼镜反光 | 自适应阈值 | OpenCV `adaptiveThreshold` |
-| 低光照环境 | 动态调整 | W/S 键实时修改阈值参数 |
-| 闭眼检测 | 状态保持 | 回退至最后已知瞳孔位置 |
-| 侧脸角度 | 数据增强 | 训练时包含 ±45° 角度样本 |
-| 快速移动 | 时序平滑 | 卡尔曼滤波器（可选） |
-
----
-
-## :balance_scale: 开源协议
-
-本项目采用 MIT 协议开源，详情请参阅 [LICENSE](LICENSE) 文件。
-
----
 
 ## :pray: 致谢
 
 - 数据集由 [aya-almahasneh-hceez](https://universe.roboflow.com/aya-almahasneh-hceez) 在 Roboflow Universe 提供
 - 基于 [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) 框架构建
 - 感谢计算机视觉和人机交互领域的相关研究启发
+
 
 ---
 
@@ -279,10 +240,7 @@ yolo detect train data=datasets/eye-mouth-dataset/data.yaml model=yolov5s.pt epo
 
 ---
 
-## 免责声明
+## :balance_scale: 开源协议
 
-本项目仅供研究和教育用途使用。用户在使用本工具时应遵守当地法律法规。开发者不对潜在的滥用行为承担责任。
+本项目采用 MIT 协议开源，详情请参阅 [LICENSE](LICENSE) 文件。
 
----
-
-**如果本项目对您有帮助，请点 ⭐ Star 支持！**
