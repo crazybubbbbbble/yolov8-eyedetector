@@ -1,0 +1,13 @@
+Model,Params(M),Latency(ms),Jitter(ms),FPS
+v5_n_eye_mouth,0,6.63,1.46,150.8
+v8_n_eye_mouth,0,6.78,1.49,147.6
+v11_n_eye_mouth,0,7.02,1.39,142.4
+v5_s_eye_mouth,0,7.71,1.01,129.7
+v11_s_eye_mouth,0,7.94,1.02,125.9
+v8_s_eye_mouth,0,8.97,1.72,111.5
+v5_m_eye_mouth,0,13.45,0.94,74.3
+v11_m_eye_mouth,0,14.47,0.95,69.1
+v8_m_eye_mouth,0,17.74,12.27,56.4
+v11_l_eye_mouth,0,18.31,1.56,54.6
+v5_l_eye_mouth,0,21.18,1.15,47.2
+v8_l_eye_mouth,0,24.61,1.79,40.6

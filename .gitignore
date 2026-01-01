@@ -1,0 +1,38 @@
+# ========================
+# Python & IDE 标准忽略
+# ========================
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.log
+
+# ========================
+# 项目特定文件夹忽略规则
+# ========================
+
+# 1. 忽略 model 文件夹下的所有文件，但保留文件夹本身
+model/*
+!model/.gitkeep
+
+# 2. 忽略 out 文件夹下的所有文件（通常是临时输出），但保留文件夹
+out/*
+!out/.gitkeep
+
+# 3. 忽略 result 文件夹下的所有文件（生成的图表等），但保留文件夹
+result/*
+!result/.gitkeep
+
+# 4. 忽略 runs 文件夹下的所有文件（YOLO 训练日志和权重），但保留文件夹
+runs/*
+!runs/.gitkeep
+
+# ========================
+# 数据集忽略规则
+# ========================
+
+# 忽略 datasets 下的所有内容（包含 eye_dataset, eye-mouth-dataset 等大文件）
+datasets/*
+
+# 【例外】保留数据集的说明文档
+!datasets/README.dataset.txt
