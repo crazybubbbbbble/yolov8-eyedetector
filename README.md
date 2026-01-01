@@ -1,7 +1,7 @@
 # 👁️ 实时眼部检测与瞳孔追踪系统
 
 ### :eye: 基于多版本 YOLO 的眼部检测与实时瞳孔定位系统
-> [![GitHub](https://img.shields.io/badge/GitHub-代码仓库-blue)](https://github.com/yourusername/eye-tracking-yolo) [![Python](https://img.shields.io/badge/Python-3.9+-green)](https://www.python.org/) [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE) [![Demo](https://img.shields.io/badge/演示-视频-red)](docs/demo.mp4)<br>
+> [![GitHub](https://img.shields.io/badge/GitHub-代码仓库-blue)](https://github.comcrazybubbbbbble/yolov8-eyedetector ) [![Python](https://img.shields.io/badge/Python-3.9+-green)](https://www.python.org/) [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE) <br>
 > 你的姓名 <br>
 > 你的机构/组织 <br>
 
