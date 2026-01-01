@@ -1,7 +1,7 @@
 # 实时眼部检测与瞳孔追踪系统
 
 ### 基于多版本 YOLO 的眼部检测与实时瞳孔定位系统
-> [![GitHub](https://img.shields.io/badge/GitHub-代码仓库-blue)](https://github.comcrazybubbbbbble/yolov8-eyedetector ) [![Python](https://img.shields.io/badge/Python-3.9+-green)](https://www.python.org/) [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE) <br>
+> [![GitHub](https://img.shields.io/badge/GitHub-代码仓库-blue)](https://github.com/crazybubbbbbble/yolov8-eyedetector ) [![Python](https://img.shields.io/badge/Python-3.9+-green)](https://www.python.org/) [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE) <br>
 
 **核心发现**: 经实证研究对比 12 个不同架构的模型，YOLOv8n 被证实为当前算力条件下兼顾高精度 (mAP@0.5 > 94.7%) 与实时性 (FPS > 150) 的最佳选择。
 
@@ -76,7 +76,7 @@
 
 ### 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/eye-tracking-yolo.git
+git clone https://github.com/crazybubbbbbble/eye-tracking-yolo.git
 cd eye-tracking-yolo
 ```
 
@@ -229,12 +229,12 @@ yolo detect train data=datasets/eye-mouth-dataset/data.yaml model=yolov5s.pt epo
 如果您在研究中使用了本项目，请引用：
 ```bibtex
 @misc{EyeTrackingYOLO2026,
-  author = {你的姓名},
+  author = {crazybubbbbbble},
   title = {基于多版本 YOLO 的实时眼部检测与瞳孔追踪系统},
   year = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/yourusername/eye-tracking-yolo}}
+  howpublished = {\url{https://github.com/crazybubbbbbble/eye-tracking-yolo}}
 }
 ```
 
